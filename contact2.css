@@ -1,0 +1,158 @@
+body, html {
+    background-color: blue;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+@media (min-width: 992px) { 
+
+.sidebar-right {
+    background-color: navy;
+    width: 400px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+}
+
+.container-fluid {
+    display: flex;
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 0;
+    left: 0;
+    right: 0;
+}
+
+button {
+    background-color: transparent;
+    text-decoration: none;
+    border: white 1px solid;
+    border-radius: 5px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button:hover {
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+}
+
+
+.row {
+    display: inline-flex;
+}
+
+.card, .form, .info {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.address {
+    background-color: rgba(0, 0, 0, .5);
+    max-width: 300px;
+}
+
+#map {
+    height: 300px;
+    width: 350px;
+    margin: 30px;
+}
+
+footer {
+    order: 100;
+}
+
+.mobile {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    position: absolute;
+}
+
+}
+
+@media (max-width: 567px) { 
+
+    .container-fluid {
+        display: flex;
+        margin: 0 auto;
+        padding: 0;
+        left: 0;
+        right: 0;
+        overflow-x: hidden;
+        flex-wrap: wrap;
+    }
+
+    .form {
+        background-color: rgba(0, 0, 0, .5);
+        margin: 0 auto;
+        width: 350px;
+        margin-bottom: 30px;
+    }
+
+    .card, .info {
+        background-color: rgba(0, 0, 0, .5);
+        margin: 0 auto;
+    }
+
+    .address {
+        background-color: rgba(0, 0, 0, .5);
+        margin-bottom: 30px;
+    }
+
+    input {
+        max-width: 300px;
+    }
+
+    h1, h3 {
+        margin: 0 auto;
+    }
+
+    .mobile {
+        visibility: visible;
+        background-color: navy;
+        min-width: 100vw;
+        max-height: 40vh;
+    }
+
+    #sidebar-wrapper {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        position: absolute;
+    }
+
+    button {
+        background-color: transparent;
+        text-decoration: none;
+        border: white 1px solid;
+        border-radius: 5px;
+        color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    button:hover {
+        transition: 0.5s;
+        background-color: white;
+        color: black;
+    }
+
+    .container {
+        width: 100vw;
+    }
+
+    #map {
+        height: 250px;
+        width: 250px;
+        margin: 30px auto;
+
+    }
+
+    .navbar {
+        background-color: navy;
+        min-width: 100%;
+    }
+}

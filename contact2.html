@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <link rel="stylesheet" href="contact2.css">
+     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap" rel="stylesheet">
+     <title>Layla (London) Ltd - Money Transfer Services</title>
+</head>
+<body>
+
+  <div class="container-fluid d-flex" id="wrapper">
+    <div class="mobile row w-100 mx-auto">
+      <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <div class="col-8 p-0"><img src="side-logo.svg" max-width="275px" class="p-2 img-fluid"></div>
+
+        <div class="col-3 p-0 m-2"><button class="navbar-toggler" type="button" data-toggle="collapse" 
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button></div>
+
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav w-100 px-3">
+            <li class="nav-item active">
+              <a class="nav-link text-white home" href="index2.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white about-us" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white lang"><span class="lg2">Language</span>
+                <button class="english">English</button> <button class="arabic">العربية</button>
+                <span class="lg1">اللغة</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+      <div class="container content-left">
+        <div class="row p-3 text-white w-100 mx-auto border-bottom border-dark"><h1 class="contact">Contact Us</h1></div>
+        <div class="row w-100 mx-auto pt-5">
+          <div class="form col-lg-6 visible-sm-10 visible-sx-10
+          px-4 align-self-stretch">
+            <h3 class="text-white text-center p-3 ebe">Enquiries By Email</h3>
+            <form>
+              <div class="form-group">
+                <label class="text-white y-e"> Your Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+              </div>
+              <input class="form-control plc" type="text" placeholder="Subject" required>
+              <div class="form-group">
+                <label class="m-2 text-white enq">Write your enquiry below:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-danger mb-2 submit">Submit</button>
+            </form>
+          </div>
+
+          <div class=" info col-lg-5 visible-sm-10 visible-xs-10 align-self-stretch mx-auto w-100">
+            <div class="card text-white mx-auto my-4">
+              <div class="card-header mx-auto p-2"><h5 class="ebp">For Enquiries by Phone</h5></div>
+              <div class="card-body mx-auto">
+                <p class="phone">+44 (0) 207 7238 555</p>
+                <p class="phone">+44 (0) 7954 466 888</p>
+                <p class="phone">+44 (0) 7984 919 818</p>
+              </div>
+            </div>
+
+            <div class="card text-white mx-auto my-4">
+              <div class="card-header mx-auto p-2"><h5 class="hours">Opening Hours</h5></div>
+              <div class="card-body text-center">
+                <p>
+                  Monday    11am - 7pm <br>
+                  Tuesday   11am - 7pm <br>
+                  Wednesday 11am - 7pm <br>
+                  Thursday  11am - 7pm <br>
+                  Friday    11am - 7pm <br>
+                  Saturday  11am - 7pm <br>
+                  Sunday    Closed
+               </p> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mx-auto border-bottom border-dark w-100 align-self-stretch">
+          <h3 class="m-4 text-white">Find Us</h3>
+        </div>
+        
+        <div class="row w-100 align-self-stretch mx-auto">
+
+          <div class="col-lg-6 visible-sm-10 visible-xs-10 align-self-stretch">
+            <div id="map" class="mx-auto"></div>
+          </div>
+          <div class="address col-lg-4 text-white mx-auto align-self-center py-3">
+            <div class="card text-white align-self-center p-2">
+              <div class="card-header mx-auto text-center"><h5 class="add">Company Address</h5></div>
+              <div class="card-body">
+                <p class="text-center">
+                  Layla (London) Ltd. <br><br>
+                  133 Broadley St,
+                  Marylebone, London, NW8 8BA <br>
+                  United Kingdom 
+               </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="sidebar-right border border-dark" id="sidebar-wrapper">
+      <div class="sticky-top">
+      <div class="sidebar-heading p-4"> <img src="side-logo.svg" alt=""></div>
+      <div class="list-group list-group-flush">
+          <a class="list-group-item list-group-item-action bg-transparent text-white lang">
+            <span class="lg2">Language</span>
+          <button class="english">English</button> 
+          <button class="arabic">العربية</button><span class="lg1 ml-4">اللغة</span></a>
+          <a href="index2.html" class="list-group-item list-group-item-action bg-transparent text-white home">Home</a>
+          <a class="list-group-item list-group-item-action bg-transparent text-white contact">Contact</a>
+          <a href="about.html" class="list-group-item list-group-item-action bg-transparent text-white about-us">About Us</a>
+      </div>
+    </div>
+    </div>
+
+</div>
+<footer class="bg-dark p-4">
+  <div class="row text-muted mx-auto w-100 text-center">
+    <small class="text-center w-100">© Layla (London) Ltd. 2015 - 2020</small>
+  </div>
+  <div class="row text-muted mx-auto">
+    <small class="mx-auto">Layla (London) Ltd. is registered in England and Wales (9672013) under the 
+      Companies Act 2006 as a private limited company with the address 133 Broadley Street, Marylebone, 
+      London, NW8 8BA.
+      </small>
+      <div class="row text-muted mx-auto">
+          <small class="mx-auto text-center">Layla (London) Ltd. is authorised and regulated 
+            by the Financial Conduct Authority (FCA) and is registered (740120) to carry on payment service activites as a 
+            Small Payment Institute (SPI) under the Service Payments Regulation 2009 (SPRs).
+            </small>
+      </div>
+  </div>
+  
+</footer>
+
+
+  <script defer src="lang.js"></script>
+  <script src="map-marker.js"></script>
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDU5Rv4mf5jlPpft3DP9gzIKRH8GrwwUpc&callback=initMap"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+</html>
