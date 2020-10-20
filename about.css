@@ -115,4 +115,9 @@ footer {
         background-color: navy;
         min-width: 100%;
     }
+
+    .about {
+        background-color: rgba(0, 0, 0, .5);
+        padding: 10px;
+    }
 }
