@@ -75,6 +75,10 @@ input {
     position: absolute;
 }
 
+p {
+    font-size: larger;
+}
+
 
 }
 
