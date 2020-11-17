@@ -8,6 +8,7 @@
      <link rel="stylesheet" href="contact2.css">
      <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap" rel="stylesheet">
+     <link rel="shortcut icon" href="favicon/favicon-32x32.png" type="image/x-icon">
      <title>Layla (London) Ltd - Money Transfer Services</title>
 </head>
 <body>
@@ -52,20 +53,27 @@
           <div class="form col-lg-6 visible-sm-10 visible-sx-10
           px-4 align-self-stretch">
             <h3 class="text-white text-center p-3">Enquiries By Email<br>للإستفسار بالايميل</h3>
-            <form>
+<!--CONTACT FORM-->
+            <form id="contact-form" action="https://formspree.io/f/mdopdwpy" method="POST" role="form">
               <div class="form-group">
-                <label class="text-white">Your Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
-              </div>
-              <input class="form-control" type="text" placeholder="Subject" required>
-              <div class="form-group">
-                <label class="m-2 text-white">Write your enquiry below:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-danger mb-2 submit">Submit</button>
-            </form>
-          </div>
 
+              <label class="text-white" for="form_name">Your Full Name</label>
+              <input type="text" name="name" class="form-control" id="exampleFormControlInput1" required>
+
+              <label class="text-white pt-1" for="form_email">Your Email address</label>
+              <input type="email" name="_replyto" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+              </div>
+              <input class="form-control" type="text" name="subject" placeholder="Subject" required>
+              <div class="form-group">
+              <label class="m-2 text-white" for="form_message">Write your enquiry below:</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="8" required></textarea>
+              </div>
+              <button type="submit" value="Send message" class="btn btn-danger mb-2 submit" id="my-form-button">Submit</button>
+              <p id="status" class="text-white text-center"></p>
+            </form>
+
+          </div>
+ 
           <div class=" info col-lg-5 visible-sm-10 visible-xs-10 align-self-stretch mx-auto w-100">
             <div class="card text-white mx-auto my-4">
               <div class="card-header mx-auto p-2"><h5 class="text-center">For Enquiries by Phone<br>
@@ -85,22 +93,22 @@
               </h5></div>
               <div class="card-body text-center">
                 <p>
-                  Monday    11am - 7pm <br>
-                  Tuesday   11am - 7pm <br>
-                  Wednesday 11am - 7pm <br>
-                  Thursday  11am - 7pm <br>
-                  Friday    11am - 7pm <br>
-                  Saturday  11am - 7pm <br>
-                  Sunday    Closed
+                  Monday  &nbsp;&nbsp;  11am - 7pm <br>
+                  Tuesday  &nbsp;&nbsp; 11am - 7pm <br>
+                  Wednesday &nbsp;&nbsp;11am - 7pm <br>
+                  Thursday  &nbsp;&nbsp;11am - 7pm <br>
+                  Friday   &nbsp;&nbsp; 11am - 7pm <br>
+                  Saturday  &nbsp;&nbsp;11am - 7pm <br>
+                  Sunday    &nbsp;&nbsp; Closed
                </p> 
               </div>
             </div>
           </div>
         </div>
 
-        <div class="row mx-auto border-bottom border-dark w-100 text-white my-4">
+        <div class="row mx-auto border-bottom border-dark w-100 text-white my-4 d-flex justify-content-center">
           <h3>Find Us</h3>
-          <div class="row w-100 px-4"><h5>موقعنا</h5></div>
+          <div class="row w-100 px-4 d-flex justify-content-center"><h5>موقعنا</h5></div>
         </div>
         
         <div class="row w-100 align-self-stretch mx-auto">
@@ -172,6 +180,7 @@
   integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
   integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+<script src="contact.js"></script>
 </body>
 </html>
